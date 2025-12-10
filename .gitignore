@@ -4,23 +4,34 @@ __pycache__/
 *$py.class
 *.so
 .Python
-.venv/
+
+# Virtual environments
 venv/
-ENV/
 env/
+ENV/
+.venv/
+
+# Package files
+*.egg-info/
+dist/
+build/
+*.egg
 
 # IDE
 .vscode/
 .idea/
 *.swp
 *.swo
+*~
 
 # OS
 .DS_Store
 Thumbs.db
 
-# Project specific
-*.egg-info/
-dist/
-build/
+# Lock files (optional - you may want to include uv.lock, but excluding for now)
+uv.lock
+
+# Environment variables
+.env
+.env.local
 
